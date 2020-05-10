@@ -1,0 +1,190 @@
+:root{
+    --colorRouge:hsl(0, 78%, 62%);
+    --colorCyan:hsl(180, 62%, 55%);
+    --colorOrange:hsl(34, 97%, 64%);
+    --colorBlue:hsl(212, 86%, 64%);
+    --colorVeryDarkBlue:hsl(234, 12%, 34%);
+    --colorGrayishBlue:hsl(229, 6%, 66%);
+    --colorVeryLightGray:hsl(0, 0%, 98%);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+
+/* Pour le mobile */
+    body{
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--colorVeryLightGray);
+    }
+
+    .section1{
+        text-align: center;
+    }
+
+
+    header{
+        text-align: center;
+    }
+
+    header h1{
+        font-weight: 200;
+        color: var(--colorGrayishBlue);
+        text-align: center;
+    }
+
+    header h1 span{
+        font-weight: 700;
+        color: black;
+    }
+
+    header p{
+        color: var(--colorGrayishBlue);
+        font-weight: 200px;
+        margin-bottom: 30px;
+        
+    }
+
+    .cards p{
+        color: var(--colorGrayishBlue);
+        font-weight: 200px;
+        margin-bottom: 30px;
+    }
+
+    .image{
+        text-align: right;
+    }
+
+    .cards_grid{
+        display: grid;
+        justify-content: center;
+    }
+
+    /* mobile 375px */
+    /* Card 1 */
+    .card1{
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, .2);
+        border-top: 3px solid var(--colorCyan);
+        margin-bottom: 30px;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 390px;
+    }
+
+    /* Card 2 */
+    .card2{
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, .2);
+        border-top: 3px solid var(--colorRouge);
+        margin-bottom: 30px;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 390px;
+    }
+
+    /* Card 3 */
+    .card3{
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, .2);
+        border-top: 3px solid var(--colorOrange);
+        margin-bottom: 30px;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 390px;
+    }
+
+    /* Card 4 */
+    .card4{
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, .2);
+        border-top: 3px solid var(--colorBlue);
+        margin-bottom: 30px;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 390px;
+    }
+
+
+
+/* Pour le reste de l'écran */
+@media(min-width: 1218px){
+    body{
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--colorVeryLightGray);
+    }
+
+    header{
+        text-align: center;
+    }
+
+    header h1{
+        font-weight: 200;
+        color: var(--colorGrayishBlue);
+        text-align: center;
+    }
+
+    header h1 span{
+        font-weight: 700;
+        color: black;
+    }
+
+    header p{
+        color: var(--colorGrayishBlue);
+        font-weight: 200px;
+        margin-bottom: 30px;
+        
+    }
+
+    .image{
+        text-align: right;
+    }
+
+    .cards_grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    /* Card 1 */
+    .card1{
+        width: 350px;
+        height: 190px;
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, .2);
+        border-top: 3px solid var(--colorCyan);
+        margin-bottom: 30px;
+        border-radius: 5px;
+        padding: 20px;
+        align-self: center;
+    }
+
+    /* Card 2 */
+    .card2{
+        width: 350px;
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, .2);
+        border-top: 3px solid var(--colorRouge);
+        margin-bottom: 30px;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    /* Card 3 */
+    .card3{
+        width: 350px;
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, .2);
+        border-top: 3px solid var(--colorOrange);
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* Card 4 */
+    .card4{
+        width: 350px;
+        height: 190px;
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, .2);
+        border-top: 3px solid var(--colorBlue);
+        margin-bottom: 30px;
+        border-radius: 5px;
+        padding: 20px;
+        align-self: center;
+    }
+}
